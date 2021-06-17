@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Craig Bartholomew Dev</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <h1 class="logo">CRAIGBART.DEV</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Showcase -->
+  <section class="showcase bg-secondary">
+    <div class="container grid grid-3 ">
+      <div class="showcase-text">
+        <h1 class="md text-center">Welcome</h1>
+        <p class="lead">Hello, my name is Craig Bartholomew and welcome to my website. I am a web developer who is currently looking for a job. I know fullstack web development tools, from styling libraries, to ORMs and databases. Learn about these tools and <a href="index.html#projects"> projects</a> below, learn <a href="AboutMe.html">about me</a>, or send me a <a href="contact.html">message</a>.
+      </div>
+      <img class="showcase-img" src="/images/me1.jpeg" alt="">
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="languages">
+    <h2 class="md my-2 text-center">
+      Languages and Frameworks
+    </h2>
+    <div class="container grid grid-3">
+      <div class="card bg-light text-center">
+        <h3 class="text-black py-1">ASP.NET 5</h3>
+        <img src="/images/dotnet.png" alt="">
+      </div>
+      <div class="card bg-light text-center">
+        <h3 class="text-secondary py-1">Angular</h3>
+        <img src="/images/angular.png" alt="">
+      </div>
+      <div class="card bg-light text-center">
+        <h3 class="text-secondary py-1">PostgreSQL</h3>
+        <img src="/images/postgres.png" alt="">
+      </div>
+      <div class="card bg-light text-center">
+        <h3 class="text-secondary py-1">.NET Framework</h3>
+        <img src="/images/dotnetmvc.png" alt="">
+      </div>
+      <div class="card bg-light text-center">
+        <h3 class="text-secondary py-1">Node.js</h3>
+        <img src="/images/node.png" alt="">
+      </div>
+      <div class="card bg-light text-center">
+        <h3 class="text-secondary py-1">SQL Server</h3>
+        <img src="/images/sqlserver.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects bg-secondary py-3">
+    <div class="container">
+      <h1 class="lg p-1">Projects</h1>
+      <div class="grid">
+        <div class="card bg-light p-2">
+          <h2 class="my-1">Dating App</h2>
+          <p class="lead">
+            .NET 5, Angular 10, Entity, PostgreSQL
+          </p>
+          <p class="content">
+            This is an extended version of the app from the "Building an app with ASP.NET Core and Angular" Udemy course by Neil Cummings. The course covers SignalR chat and presence tracking, Identity authentication, policy based authorization, cloud image storage with Cloudinary, and deployment with Heroku. It also showed me how to run a PostgreSQL database in Docker and manage it with PgAdmin. I wanted to test my knowledge of Angular and .NET 5, so I added a refresh token, forgot password, and email confirmation functionality after completing the course. I also fixed some bugs that were in the original app. This app helped me get comfortable connecting SPAs and APIs, working with branches in Git, and preparing a fullstack app for deployment.
+          </p>
+        </div>
+        <div class="card bg-light p-2">
+          <h2 class="my-1">Vidly</h2>
+          <p class="lead">
+            .NET Framework, SQL Server, JQuery, Azure
+          </p>
+          <p class="content">
+            This is also an app that I extended from the "The Complete ASP.NET MVC 5 Course" Udemy course by Mosh Hamedani. It was my introduction to ASP.NET, Visual Studio, SQL Server, and Azure deployment. It is a movie rental app, where customers can rent movies, and users can edit those rentals. This app uses .NET Framework 4.6.1 MVC with Razor Views, and includes OAuth and role based authorization. It also uses WebAPI and JQuery to display data in a third-party table component, and send delete requests. I added the ability for users to mark customers as delinquent on payment, apply discount rates, and limit the number of movies that a customer can rent at one time. I also added an "Admin" role for managing the roles of other users.
+          </p>
+        </div>
+        <div class="card bg-light p-2">
+          <h2 class="my-1">Video Title Analyser</h2>
+          <p class="lead">
+            MEAN Stack, IBM Watson
+          </p>
+          <p class="content">
+            This was done for a MEAN stack class at Boston University. The class required the use of two third-pary APIs, and OAuth implementation. I used Google OAuth and the YouTube API to allow a user to log into their Google account and do a YouTube search. The top search results would appear, with each title getting fed through the IBM Watson Natural Language Understanding API, which would analyze the words in the title and display scores between 0 and 1 for different emotions. For example, a search for "Ugly Spider" would return a result with that is high in "Disgust" and low in "Joy". This was my first fullstack app, and we were only required to get the app to work in a local development environment. I remember the asynchronicity of Node.js being a challenge to work with, but everything worked in the end.
+          </p>
+        </div>
+        <div class="card bg-light p-2">
+          <h2 class="my-1">React Personal Site</h2>
+          <p class="lead">
+            React, .NET Framework, SQL Server
+          </p>
+          <p class="content">
+            This was my attempt at creating a functional resume/blog application using React and ASP.NET 4.6.1 WebAPI. I built a basic front end in React with a full blog section, authentication, and commenting. I used React Hooks to maintain state in the app and just kept the data stored in localStorage during frontend development. I eventually tried to connect the app to ASP.NET WebAPI and realized that I did not have the knowledge to properly work with both a SPA and an API, particularly when it came to authentication and authorization. It motivated me to take the Neil Cummings ASP.NET Core/Angular 10 course in order to learn. Failing with this app helped me to understand my own limitations, and inspired me to improve and develop a modern skillset. I now feel comfortable working with APIs and SPAs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-1">
+    <div class="container flex">
+      <div>
+        <h1>CRAIGBART.DEV</h1>
+        <p>Copyright &copy; 2021</p>
+      </div>
+      <div></div>
+      <div class="social">
+        <a href="https://github.com/wavydomez" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
