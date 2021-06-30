@@ -107,12 +107,20 @@ code, pre {
     position: relative;
 }
 
-.showcase a {
+.showcase .intro-link {
     font-weight: bold;
 }
 
-.showcase a:hover {
+.showcase .intro-link:hover {
     border-bottom: 2px dotted white;
+}
+
+.res-btn {
+    margin: 20px auto;
+}
+
+.res-btn:hover {
+    border-bottom: none;
 }
 
 .showcase .grid > *:first-child {
@@ -176,9 +184,28 @@ code, pre {
 }
 
 /* Projects */
+.project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-head i:hover {
+    transform: scale(1.1);
+    color: orange;
+}
+
 .projects .lead {
     border-bottom: 1px solid var(--dark-color);
     padding-bottom: 8px;
+}
+
+.projects .deployed {
+    color: var(--primary-color);
+}
+
+.projects .deployed:hover {
+    color: orange;
 }
 
 .projects .card {

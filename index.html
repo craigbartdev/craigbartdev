@@ -13,7 +13,7 @@
   <!-- Navbar -->
   <div class="navbar">
     <div class="container flex">
-      <h1 class="logo">CRAIGBART.DEV</h1>
+      <h1 class="logo">CRAIGBARTDEV</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -27,10 +27,14 @@
 
   <!-- Showcase -->
   <section class="showcase bg-secondary">
-    <div class="container grid grid-3 ">
+    <div class="container grid grid-3">
       <div class="showcase-text">
         <h1 class="md text-center">Welcome</h1>
-        <p class="lead">Hello, my name is Craig Bartholomew and welcome to my website. I am a web developer who is currently looking for a job. I know fullstack web development tools, from styling libraries, to ORMs and databases. Learn about these tools and <a href="index.html#projects"> projects</a> below, learn <a href="AboutMe.html">about me</a>, or send me a <a href="contact.html">message</a>.
+        <p class="lead">Hello, my name is Craig Bartholomew and welcome to my website. Learn about me and my experience with fullstack web development tools, including styling libraries, ORMs, databases and more. Learn about my <a class="intro-link" href="index.html#projects"> projects</a>, learn <a class="intro-link" href="AboutMe.html">about me</a>, or send me a <a class="intro-link" href="contact.html">message</a>.
+        <br>
+        <div class="text-center">
+          <a class="btn btn-dark res-btn" href="/resources/Resume.pdf" download>Download PDF Resume</a>
+        </div>
       </div>
       <img class="showcase-img" src="/images/me1.jpeg" alt="">
     </div>
@@ -75,7 +79,12 @@
       <h1 class="lg p-1">Projects</h1>
       <div class="grid">
         <div class="card bg-light p-2">
-          <h2 class="my-1">Dating App</h2>
+          <div class="project-head">
+            <h2 class="my-1">Dating App <a class="deployed" href="https://datingappdotnet5.herokuapp.com/" target="_blank">(View Here)</a></h2>
+            <a href="https://github.com/craigbartdev/.NET-5-Dating-App" target="_blank">
+              <i class="fab fa-github fa-2x text-secondary"></i>
+            </a>
+          </div>
           <p class="lead">
             .NET 5, Angular 10, Entity, PostgreSQL
           </p>
@@ -84,7 +93,12 @@
           </p>
         </div>
         <div class="card bg-light p-2">
-          <h2 class="my-1">Vidly</h2>
+          <div class="project-head">
+            <h2 class="my-1">Vidly</h2>
+            <a href="https://github.com/craigbartdev/Vidly3" target="_blank">
+              <i class="fab fa-github fa-2x text-secondary"></i>
+            </a>
+          </div>
           <p class="lead">
             .NET Framework, SQL Server, JQuery, Azure
           </p>
@@ -93,7 +107,12 @@
           </p>
         </div>
         <div class="card bg-light p-2">
-          <h2 class="my-1">Video Title Analyser</h2>
+          <div class="project-head">
+            <h2 class="my-1">Video Title Analyser</h2>
+            <a href="https://github.com/craigbartdev/591-Final-Project" target="_blank">
+              <i class="fab fa-github fa-2x text-secondary"></i>
+            </a>
+          </div>
           <p class="lead">
             MEAN Stack, IBM Watson
           </p>
@@ -102,7 +121,12 @@
           </p>
         </div>
         <div class="card bg-light p-2">
-          <h2 class="my-1">React Personal Site</h2>
+          <div class="project-head">
+            <h2 class="my-1">React Personal Site</h2>
+            <a href="https://github.com/craigbartdev/personal_site" target="_blank">
+              <i class="fab fa-github fa-2x text-secondary"></i>
+            </a>
+          </div>
           <p class="lead">
             React, .NET Framework, SQL Server
           </p>
@@ -118,12 +142,13 @@
   <footer class="footer py-1">
     <div class="container flex">
       <div>
-        <h1>CRAIGBART.DEV</h1>
-        <p>Copyright &copy; 2021</p>
+        <h1>CRAIGBARTDEV</h1>
+        <!-- <p>Copyright &copy; 2021</p> -->
       </div>
       <div></div>
       <div class="social">
-        <a href="https://github.com/wavydomez" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+        <a href="mailto: craigbartdev@protonmail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
+        <a href="https://github.com/craigbartdev" target="_blank"><i class="fab fa-github fa-3x"></i></a>
       </div>
     </div>
   </footer>
